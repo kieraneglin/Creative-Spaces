@@ -23,20 +23,40 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+
+# Use Slim as templaitng language
+gem 'slim-rails'
+
+# Use to check user privilege
+gem 'cancancan', '~> 1.10'
+
+# The ever-ubiquitious bootstrap
+gem 'bootstrap-sass'
+
+# For pagination
+gem 'kaminari'
+
+# To generate dummy data
+gem 'faker'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-end
 
+  # All of these to make a pretty console
+  gem 'hirb'
+  gem 'interactive_editor'
+  gem 'awesome_print'
+end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
