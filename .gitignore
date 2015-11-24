@@ -11,3 +11,4 @@
 /log/*
 !/log/.keep
 /tmp
+/config/initializers/secret_keys.rb

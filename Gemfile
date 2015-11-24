@@ -47,6 +47,8 @@ gem 'kaminari'
 # To generate dummy data
 gem 'faker'
 
+# For encryption NOT hashing
+gem 'aescrypt'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
